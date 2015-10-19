@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@android:id/text1"
+    android:textColor="@drawable/item_lista_texto"
+    android:textSize="18sp"
+    android:paddingLeft="10dp"
+    android:minHeight="40dp"
+    android:background="@drawable/item_lista"
+    android:gravity="center_vertical" />

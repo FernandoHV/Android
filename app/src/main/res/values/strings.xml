@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="app_name">Food Master</string>
+  <string name="action_settings">Configurações</string>
+   <string name="menu_lista_compras">Lista de compras</string>
+  <string name="menu_buscar_preco">Buscar Preço</string>
+  <string name="title_activity_tela_principal">telaPrincipal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string-array name="sections">
+    <item>Estabelecimentos</item>
+    <item>Meus Favoritos</item>
+    <item>Cadastro</item>
+  </string-array>
+ <!-- <string-array name="section_titles">
+    <item>Estabelecimentos</item>
+    <item>Meus Favoritos</item>
+  </string-array>-->
+  <string-array name="sections_icons">
+    <item>@drawable/ic_star_black_24dp</item>
+    <item>@drawable/ic_star_black_24dp</item>
+    <item>@drawable/ic_star_black_24dp</item>
+  </string-array>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="respostaSucessoServidor">Sucesso</string>
+    <string name="respostaErroServidor">Erro</string>
+    <string name="title_activity_login">Entrar</string>
+
+
+
+</resources>

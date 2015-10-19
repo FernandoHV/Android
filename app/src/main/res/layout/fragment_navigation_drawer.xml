@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.foodmaster.fernandoh.foodmaster.NavigationDrawerFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:padding="30dp"
+        android:background="@drawable/fundo_header"
+        android:gravity="bottom" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/imagem_avatar"
+        android:layout_above="@+id/nomeUsuario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="10dp" />
+
+    <TextView
+        android:id="@+id/nomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fernando H. Victor"
+        android:textColor="@color/texto_header"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:paddingLeft="12dp"
+        android:paddingBottom="20dp"
+        android:layout_above="@+id/listaDeMenus" />
+    <ListView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent" android:dividerHeight="5dp"
+        android:background="#FFFFFF"
+        tools:context="com.foodmaster.fernandoh.foodmaster.NavigationDrawerFragment"
+        android:textFilterEnabled="false"
+        android:id="@+id/listaDeMenus"
+        android:cacheColorHint="#000000"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/headerView"
+        android:paddingTop="20dp" />
+
+</RelativeLayout>
+
+
