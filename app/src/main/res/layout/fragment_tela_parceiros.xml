@@ -16,13 +16,12 @@
         android:animationCache="false"/>-->
     <GridView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/listaPromocoes"
-        android:drawSelectorOnTop="false"
         android:smoothScrollbar="true"
-        android:scrollingCache="false"
-        android:animationCache="false"
-        android:numColumns="2" />
+        android:numColumns="@integer/qtdColunasParceiros"
+        android:stretchMode="columnWidth"
+        android:gravity="clip_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
