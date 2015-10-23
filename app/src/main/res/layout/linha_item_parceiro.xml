@@ -2,18 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <!--android:background="@drawable/item_lista_promocoes"-->
+    android:orientation="horizontal"
+   >
 
     <LinearLayout android:id="@+id/thumbnail"
-        android:layout_width="130dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:padding="3dip"
+        android:padding="0dip"
         android:layout_alignParentLeft="false"
         android:background="@color/fundo_lista"
         android:layout_centerHorizontal="true"
         android:orientation="vertical"
-        android:layout_margin="5dp">
+        android:layout_margin="10dp"
+        >
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
         <ImageView
             android:id="@+id/imageView"
@@ -22,6 +26,12 @@
             android:src="@drawable/sem_imagem"
             android:layout_gravity="center_horizontal" />
 
+            <ImageView
+                android:src="@drawable/borda_arredondada"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
         <TextView
             android:id="@+id/nomeParceiro"
             android:layout_width="fill_parent"

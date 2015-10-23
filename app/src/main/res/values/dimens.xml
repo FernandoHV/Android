@@ -7,5 +7,10 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="largura_tile_parceiro">130dp</dimen>
+    <dimen name="raio_borda">10dp</dimen>
+    <dimen name="largura_img_detalhe_parceiro">150dp</dimen>
+    <dimen name="altura_img_detalhe_parceiro">150dp</dimen>
+    <dimen name="largura_tabs">120dp</dimen>
 
 </resources>

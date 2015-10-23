@@ -4,44 +4,206 @@
     android:layout_height="match_parent"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="16dp"
-        android:text="Detalhe"
-        android:id="@+id/txtId"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tabs"
+        android:background="@color/barra_menu">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:id="@+id/img_Parceiro"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="false"
-        android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="@dimen/largura_tabs"
+            android:layout_height="wrap_content"
+            android:text="Informações"
+            android:id="@+id/btTabInfo"
+            android:textColor="@android:color/white"
+            android:background="@color/botao_tab_apertado"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/txtResultadoDetalhes"
-        android:layout_below="@+id/img_Parceiro"
-        android:layout_centerHorizontal="true"
-        android:visibility="gone" />
+           />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/txtNomeParceiro"
-        android:layout_below="@+id/img_Parceiro"
-        android:layout_centerHorizontal="true"
-        android:textSize="20dp" />
+        <Button
+            android:layout_width="@dimen/largura_tabs"
+            android:layout_height="wrap_content"
+            android:text="Pedido"
+            android:id="@+id/btTabPedido"
+            android:layout_centerHorizontal="true"
+            android:background="@color/barra_menu"
+            android:textColor="@android:color/white"/>
 
+        <Button
+            android:layout_width="@dimen/largura_tabs"
+            android:layout_height="wrap_content"
+            android:text="Como Chegar"
+            android:id="@+id/btTabChegar"
+            android:background="@color/barra_menu"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/tabs"
+        android:id="@+id/layoutInfoParceiro">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/txtNomeParceiro"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22dp"
+                    android:padding="10dp"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageView
+                    android:layout_width="@dimen/largura_img_detalhe_parceiro"
+                    android:layout_height="@dimen/altura_img_detalhe_parceiro"
+                    android:id="@+id/img_Parceiro"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sem_imagem"
+                    android:layout_below="@+id/txtNomeParceiro"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare porta neque ut porta. Vivamus sed justo et nibh rutrum pulvinar ut at augue. Ut eget mattis mauris. Quisque aliquet ac diam porta blandit. Vivamus quis lorem quis massa sodales sodales non quis turpis. Donec ultrices scelerisque libero pharetra aliquet. Nullam pharetra facilisis accumsan."
+                    android:id="@+id/textView2"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/tabs"
+        android:id="@+id/layoutPedidoParceiro">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:layout_marginTop="20dp" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fazer Pedido"
+                        android:id="@+id/button5"
+                        android:layout_gravity="left"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver Cardapio"
+                        android:id="@+id/button10"
+                        android:layout_gravity="left"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/tabs"
+        android:id="@+id/layoutChegarParceiro" >
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver Cardapio"
+                android:id="@+id/button4"
+                android:layout_gravity="left"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Como Chegar"
+                android:id="@+id/button6"
+                android:layout_gravity="left"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView3" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
 
 </RelativeLayout>

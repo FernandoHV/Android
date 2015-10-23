@@ -21,6 +21,8 @@
     <color name="texto_lista_selecionado">#445963</color>
     <color name="fundo_lista_selecionado">#E0E0E0</color>
     <color name="barra_menu">#8C181C</color>
+    <color name="botao_tab_apertado">#580e11</color>
     <color name="foreground">@android:color/white</color>
+    <color name="fundoEscuro">#EEEEEE</color>
 
 </resources>

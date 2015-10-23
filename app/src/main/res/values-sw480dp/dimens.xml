@@ -4,6 +4,10 @@
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw600dp devices (e.g. 7" tablets) here.
     -->
-
+    <dimen name="largura_tile_parceiro">140dp</dimen>
+    <dimen name="raio_borda">12dp</dimen>
+    <dimen name="largura_img_detalhe_parceiro">200dp</dimen>
+    <dimen name="altura_img_detalhe_parceiro">200dp</dimen>
+    <dimen name="largura_tabs">120dp</dimen>
 
 </resources>
