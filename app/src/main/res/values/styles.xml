@@ -13,16 +13,29 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
+
+ Theme.AppCompat.Light.DarkActionBar
  -->
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="drawerArrowStyle">@style/MyDrawerArrowToggle</item>
+        <item name="android:actionModeBackground">@color/fundoEscuro</item>
+        <item name="android:actionModeCopyDrawable">@drawable/ic_content_copy_black_24dp</item>
+        <item name="android:actionModeCutDrawable">@drawable/ic_content_cut_black_24dp</item>
+        <item name="android:actionModeSelectAllDrawable">@drawable/ic_select_all_black_24dp</item>
+        <item name="android:actionModePasteDrawable">@drawable/ic_content_paste_black_24dp</item>
+        <item name="android:actionModeCloseDrawable">@drawable/ic_done_black_24dp</item>
+
+
 
         <!-- Support library compatibility -->
         <item name="actionBarStyle">@style/MyActionBar</item>
     </style>
+
+
+
 
     <style name="MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
         <!--<item name="color">@color/foreground</item>-->
@@ -32,6 +45,7 @@
         <item name="android:titleTextStyle">@style/MyTitleTextStyle</item>
         <item name="android:background">@color/barra_menu</item>
 
+
         <!-- Support library compatibility -->
         <item name="titleTextStyle">@style/MyTitleTextStyle</item>
         <item name="background">@color/barra_menu</item>
@@ -40,4 +54,9 @@
     <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/foreground</item>
     </style>
+
+
+
+
+
 </resources>

@@ -279,101 +279,114 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
                 android:background="#7dffffff"
                 android:padding="5dp"
                 android:id="@+id/barraEndereco">
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="false"
-                    android:layout_alignParentTop="false"
-                    android:layout_alignParentEnd="false"
-                    android:layout_alignParentBottom="false"
-                    android:id="@+id/linearLayout"
-                    android:layout_above="@+id/layoutCidadeChegar" >
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/scrollView3" >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:id="@+id/imagemParceiroChegar"
-                        android:src="@drawable/sem_imagem"
-                        android:paddingLeft="9dp"
-                        android:layout_gravity="center_vertical" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentEnd="false"
+                            android:layout_alignParentBottom="false"
+                            android:id="@+id/linearLayout"
+                            android:layout_above="@+id/layoutCidadeChegar" >
 
-                    <TextView
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:id="@+id/imagemParceiroChegar"
+                                android:src="@drawable/sem_imagem"
+                                android:paddingLeft="9dp"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Nome Parceiro"
+                                android:id="@+id/txtNomeParceiroChegar"
+                                android:paddingLeft="5dp"
+                                android:layout_gravity="center_vertical"
+                                android:textStyle="bold"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentTop="false"
+                            android:layout_alignParentEnd="false"
+                            android:layout_alignParentBottom="false"
+                            android:id="@+id/layoutEndereçoChegar"
+                            android:layout_above="@+id/layoutCidadeChegar">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imageView6"
+                                android:src="@drawable/icone_localizacao"
+                                android:paddingLeft="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Endereço Chegar"
+                                android:id="@+id/txtEnderecoChegar"
+                                android:paddingLeft="5dp"
+                                android:layout_gravity="center_vertical"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                        android:orientation="horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Nome Parceiro"
-                        android:id="@+id/txtNomeParceiroChegar"
-                        android:paddingLeft="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textSize="20sp" />
-                </LinearLayout>
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="false"
+                        android:id="@+id/layoutCidadeChegar">
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="false"
-                    android:layout_alignParentTop="false"
-                    android:layout_alignParentEnd="false"
-                    android:layout_alignParentBottom="false"
-                    android:id="@+id/layoutEndereçoChegar"
-                    android:layout_above="@+id/layoutCidadeChegar">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView5"
+                            android:src="@drawable/ic_cidade_local"
+                            android:paddingLeft="9dp" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/imageView6"
-                        android:src="@drawable/icone_localizacao"
-                        android:paddingLeft="9dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Campo Mourão, PR"
+                            android:id="@+id/txtCidadeChegar"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:textSize="15sp" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Endereço Chegar"
-                        android:id="@+id/txtEnderecoChegar"
-                        android:paddingLeft="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:textSize="15sp" />
-                </LinearLayout>
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="false"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentEnd="false"
-                    android:id="@+id/layoutCidadeChegar">
+                    </LinearLayout>
+                </ScrollView>
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/imageView5"
-                        android:src="@drawable/ic_cidade_local"
-                        android:paddingLeft="9dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Campo Mourão, PR"
-                        android:id="@+id/txtCidadeChegar"
-                        android:layout_gravity="center_vertical"
-                        android:paddingLeft="5dp"
-                        android:textSize="15sp" />
-                </LinearLayout>
 
             </LinearLayout>
 
@@ -382,10 +395,10 @@
                 android:layout_height="60dp"
                 android:text="Go!"
                 android:id="@+id/btBarraChegar"
+                android:layout_alignBottom="@+id/barraEndereco"
                 android:layout_alignRight="@+id/barraEndereco"
-                android:layout_alignTop="@+id/barraEndereco"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp" />
+                android:layout_marginBottom="10dp" />
 
         </RelativeLayout>
 

@@ -6,10 +6,10 @@
     -->
     <dimen name="activity_horizontal_margin">128dp</dimen>
     <dimen name="largura_tile_parceiro">160dp</dimen>
-    <dimen name="raio_borda">12dp</dimen>
+    <dimen name="raio_borda">6dp</dimen>
     <dimen name="largura_img_detalhe_parceiro">200dp</dimen>
     <dimen name="altura_img_detalhe_parceiro">200dp</dimen>
-    <dimen name="largura_tabs">120dp</dimen>
+    <dimen name="largura_tabs">100dp</dimen>
 
 
 </resources>

@@ -37,7 +37,8 @@
             android:background="#e8e7e7"
             android:autoText="false"
             tools:targetApi="jelly_bean_mr1"
-            android:password="false" />
+            android:password="false"
+            android:textIsSelectable="true" />
 
         <EditText
             android:layout_width="fill_parent"

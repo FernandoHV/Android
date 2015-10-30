@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/listaPromocoes"
         android:smoothScrollbar="true"
-        android:numColumns="@integer/qtdColunasParceiros"
+        android:numColumns="@integer/qtdColunasParceiros_land"
         android:stretchMode="columnWidth"
         android:gravity="clip_horizontal" />
 
